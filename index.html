@@ -31,7 +31,7 @@
     header p {
       font-size: 1.1em;
       color: #ffffff; /* texto blanco solo aquí */
-      text-shadow: 0 0 6px rgba(0,0,0,0.6); /* un poco de sombra para que se lea bien */
+      text-shadow: 0 0 6px rgba(0,0,0,0.6);
     }
 
     /* Sección */
@@ -52,7 +52,6 @@
       font-weight: bold;
       border: none;
       padding: 14px 22px;
-      margin: 10px;
       font-size: 16px;
       border-radius: 10px;
       cursor: pointer;
@@ -65,21 +64,22 @@
     .btn-download {
       background: #00e6e6;
       color: #000;
+      margin-bottom: 30px;
     }
     .btn-download:hover {
       background: #00cccc;
       box-shadow: 0 0 20px rgba(0,255,255,0.5);
     }
 
-    /* Botón de Discord */
+    /* Botón de Discord (más claro) */
     .btn-discord {
-      background: #5865F2;
+      background: #7289DA; /* azul más claro y suave */
       color: #fff;
       margin-top: 20px;
     }
     .btn-discord:hover {
-      background: #4752C4;
-      box-shadow: 0 0 20px rgba(88,101,242,0.6);
+      background: #5b6eae; /* ligeramente más oscuro al pasar el mouse */
+      box-shadow: 0 0 20px rgba(114,137,218,0.6);
       transform: scale(1.03);
     }
 
@@ -98,6 +98,16 @@
       border-radius: 10px;
       border: 2px solid #0ff;
       box-shadow: 0 0 15px rgba(0,255,255,0.2);
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Contenedor del botón Discord */
+    .discord-container {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center; /* centra horizontalmente */
     }
 
     /* Footer */
@@ -125,9 +135,11 @@
 
     <img src="fondo.jpeg" alt="Minecraft Cian Futurista" class="main-img">
 
-    <a href="https://dsc.gg/hylexnw" target="_blank" class="btn btn-discord">
-      <img src="discord.png" alt="Discord"> Discord
-    </a>
+    <div class="discord-container">
+      <a href="https://dsc.gg/hylexnw" target="_blank" class="btn btn-discord">
+        <img src="discord.png" alt="Discord"> Discord
+      </a>
+    </div>
   </section>
 
   <footer>
