@@ -5,33 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Servidor Minecraft - Zeek Network</title>
   <style>
-    /* Fondo con degradado suave */
+    /* Fondo ligeramente oscuro */
     body {
       margin: 0;
       padding: 0;
       font-family: 'Verdana', sans-serif;
       text-align: center;
-      color: #000000; /* texto negro */
-      background: #ffffff;
+      color: #000000;
+      background: #f2f2f2; /* blanco un poco oscuro */
     }
 
     /* Header */
     header {
-      padding: 60px 20px;
-      background: url("logo.jpeg") no-repeat center center;
+      padding: 60px 20px 20px 20px;
+      background: url("logo.jpeg") no-repeat center top;
       background-size: cover;
       border-bottom: 2px solid #0ff;
+      position: relative;
     }
-    header h1 {
-      font-size: 2.5em;
-      margin: 0;
-      color: #00e6e6;
-      text-shadow: 0 0 8px rgba(0,255,255,0.4);
+    header img {
+      max-width: 400px;
+      height: auto;
+      border: none;
+      box-shadow: none;
+      display: block;
+      margin: 0 auto;
     }
-    header p {
+    header p.title-text {
       font-size: 1.1em;
-      color: #ffffff; /* texto blanco solo aquí */
+      color: #ffffff; /* texto debajo del logo */
       text-shadow: 0 0 6px rgba(0,0,0,0.6);
+      margin-top: 10px;
+    }
+    header p.page-official {
+      font-size: 14px;
+      color: #cccccc; /* gris suave */
+      margin-top: 5px;
     }
 
     /* Sección */
@@ -71,15 +80,15 @@
       box-shadow: 0 0 20px rgba(0,255,255,0.5);
     }
 
-    /* Botón de Discord con color personalizado */
+    /* Botón de Discord con color oficial */
     .btn-discord {
-    background: #5865F2; /* azul oficial Discord */
-    color: #fff;
+      background: #5865F2; /* azul oficial Discord */
+      color: #fff;
       margin-top: 20px;
     }
     .btn-discord:hover {
-      background: #e04f5cd9; /* ligeramente más oscuro al pasar el mouse */
-      box-shadow: 0 0 20px rgba(255,86,98,0.6);
+      background: #4752C4;
+      box-shadow: 0 0 20px rgba(88,101,242,0.6);
       transform: scale(1.03);
     }
 
@@ -110,7 +119,7 @@
       justify-content: center; /* centra horizontalmente */
     }
 
-    /* Footer */
+    /* Footer decorativo */
     footer {
       margin-top: 40px;
       padding: 15px;
@@ -123,8 +132,9 @@
 </head>
 <body>
   <header>
-    <img src="Mcpe.png" alt="Minecraft 1.1.5" style="max-width: 400px; height: auto; border: none; box-shadow: none;">
-    <p>Un servidor Minecraft con estilo futurista en cian xd</p>
+    <img src="Mcpe.png" alt="Minecraft 1.1.5">
+    <p class="title-text">Un servidor Minecraft con estilo futurista en cian xd</p>
+    <p class="page-official">Página oficial</p>
   </header>
 
   <section>
@@ -143,8 +153,7 @@
   </section>
 
   <footer>
-    © 2025 Zeek Network - Página oficial
+    <!-- Footer decorativo, sin “Página oficial” -->
   </footer>
 </body>
 </html>
-
