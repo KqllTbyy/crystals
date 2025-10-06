@@ -30,7 +30,8 @@
     }
     header p {
       font-size: 1.1em;
-      color: #000000; /* texto negro */
+      color: #ffffff; /* texto blanco solo aquí */
+      text-shadow: 0 0 6px rgba(0,0,0,0.6); /* un poco de sombra para que se lea bien */
     }
 
     /* Sección */
@@ -42,12 +43,12 @@
       text-shadow: 0 0 6px rgba(0,255,255,0.3);
     }
 
-    /* Botones */
+    /* Botones base */
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 8px;
+      gap: 10px;
       font-weight: bold;
       border: none;
       padding: 14px 22px;
@@ -60,7 +61,7 @@
       transition: 0.3s;
     }
 
-    /* Botón de descarga (cian) */
+    /* Botón de descarga */
     .btn-download {
       background: #00e6e6;
       color: #000;
@@ -70,24 +71,28 @@
       box-shadow: 0 0 20px rgba(0,255,255,0.5);
     }
 
-    /* Botón de Discord (color oficial) */
+    /* Botón de Discord */
     .btn-discord {
       background: #5865F2;
       color: #fff;
+      margin-top: 20px;
     }
     .btn-discord:hover {
       background: #4752C4;
       box-shadow: 0 0 20px rgba(88,101,242,0.6);
+      transform: scale(1.03);
     }
 
-    /* Icono Discord */
+    /* Icono de Discord */
     .btn-discord img {
-      width: 22px;
-      height: 22px;
+      width: 32px;
+      height: 32px;
+      border: none;
+      box-shadow: none;
     }
 
     /* Imágenes */
-    img {
+    img.main-img {
       max-width: 90%;
       margin-top: 20px;
       border-radius: 10px;
@@ -108,7 +113,6 @@
 </head>
 <body>
   <header>
-    <!-- Imagen como logo -->
     <img src="Mcpe.png" alt="Minecraft 1.1.5" style="max-width: 400px; height: auto; border: none; box-shadow: none;">
     <p>Un servidor Minecraft con estilo futurista en cian xd</p>
   </header>
@@ -119,11 +123,11 @@
 
     <a href="https://www.mediafire.com/file/2eddoj8azxwiven/MegaDev_Hub.apk/file" target="_blank" class="btn btn-download">⬇️ Descargar Cliente</a>
 
+    <img src="fondo.jpeg" alt="Minecraft Cian Futurista" class="main-img">
+
     <a href="https://dsc.gg/hylexnw" target="_blank" class="btn btn-discord">
       <img src="discord.png" alt="Discord"> Discord
     </a>
-
-    <img src="fondo.jpeg" alt="Minecraft Cian Futurista">
   </section>
 
   <footer>
